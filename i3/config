@@ -255,5 +255,6 @@ client.urgent           $u-bgcolor      $u-bgcolor      $text           $u-bgcol
 #classes n shi
 
 assign [class="zen" instance="Navigator"] 1
+assign [class="Godot_Editor" instance="Godot"] 2 
 
 
