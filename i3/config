@@ -23,6 +23,8 @@ font pango:DejaVu 10
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 exec_always picom
+exec_always gammastep -l 31.2001:29.9187
+exec --no-startup-id xmodmap ~/.Xmodmap
 exec --no-startup-id ~/.config/scripts/soundLaunch.sh
 exec --no-startup-id xset s off -dpms
 exec --no-startup-id .config/polybar/launch.sh --forest
@@ -73,6 +75,7 @@ bindsym $mod+q exec wezterm
 
 # kill focused window
 bindsym $mod+c kill
+bindsym $mod+Control+Mod1+p exec poweroff
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id dmenu_run
@@ -140,10 +143,10 @@ set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
-set $ws8 "8"
-set $ws7 "7"
+set $ws8 "7"
+set $ws7 "8"
 set $ws9 "9"
-set $ws10 "10"
+set $ws10 "0"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
