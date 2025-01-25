@@ -23,7 +23,7 @@ font pango:DejaVu 10
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 exec_always picom
-exec_always gammastep -l 31.2001:29.9187
+#exec_always gammastep -l 31.2001:29.9187
 exec --no-startup-id xmodmap ~/.Xmodmap
 exec --no-startup-id ~/.config/scripts/soundLaunch.sh
 exec --no-startup-id xset s off -dpms
@@ -247,3 +247,13 @@ client.focused          $bgcolor        $bgcolor        $text           $indicat
 client.unfocused        $in-bgcolor     $in-bgcolor     $in-text        $in-bgcolor
 client.focused_inactive $in-bgcolor     $in-bgcolor     $in-text        $in-bgcolor
 client.urgent           $u-bgcolor      $u-bgcolor      $text           $u-bgcolor
+
+
+
+
+
+#classes n shi
+
+assign [class="zen" instance="Navigator"] 1
+
+
